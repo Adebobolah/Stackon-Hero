@@ -180,7 +180,7 @@ class JsonForm extends Component {
   // this event handler handles the POST request to the neural network API
   handleSubmit(event) {
     event.preventDefault();
-    const url = "http://127.0.0.1:8000/resultJson";
+    const url = "https://stackon-hero.herokuapp.com/resultJson";
     const bodyData = JSON.stringify({
       open_price: this.state.open,
       "24h_volume": this.state.volume,
